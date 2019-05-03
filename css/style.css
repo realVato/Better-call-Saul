@@ -3,10 +3,18 @@
 body {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
+/* default */
 .container {
     margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
 
 img {
@@ -21,3 +29,45 @@ ul {
 a {
     text-decoration: none;
 }
+
+span {
+    color: rgb(37, 179, 37);
+}
+
+/* Navbar */
+#header-main {
+    border-bottom: 1px solid rgb(37, 179, 37);
+}
+
+.navbar li{
+    display: inline;
+    padding-right: 20px;
+}
+
+.navbar li a {
+color: rgb(37, 179, 37);
+}
+
+.navbar li a.current, .navbar li a:hover {
+    border-bottom: 3px solid rgb(37, 179, 37);
+}
+
+/* showcase */
+#showcase {
+    height: 910px;
+    background: url(../img/better-call-saul-wallpaper-2.jpg) no-repeat center center/cover;
+    margin-bottom: 30px;
+}
+
+#showcase .container .row .box {
+    border: 1px solid #333;
+    border-radius: 90px;
+    background-color: #333;
+    color: #fff;
+    opacity: 0.9;
+}
+
+#showcase .container .row {
+    height: 780px;
+}
+
