@@ -145,11 +145,29 @@ color: var(--main-color);
 
 
 /* Services */
+#services {
+    margin: 20px 0;
+}
 
+#services .padding {
+    padding-bottom: 10px;
+}
+
+#services .bg-child {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+#services .bg-child:nth-child(even) {
+    background-color: var(--main-color);
+    color: #fff;
+}
 
 /* Media Query */
 
 @media (max-width: 770px) {
+    /* HOME */
     #header-main .navbar li {
         padding-right: 10px;
     }
@@ -165,5 +183,10 @@ color: var(--main-color);
 
     #contact {
         display: none;
+    }
+
+    /* Services */
+    #services {
+        margin: 20px 0 0 0;
     }
 }
