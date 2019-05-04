@@ -135,6 +135,20 @@ color: var(--main-color);
     padding: 10px;
 }
 
+/* </HOME> */
+
+/* About us */
+#about-us {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* Services */
+
+
+/* Media Query */
+
 @media (max-width: 770px) {
     #header-main .navbar li {
         padding-right: 10px;
@@ -153,5 +167,3 @@ color: var(--main-color);
         display: none;
     }
 }
-
-/* </HOME> */
