@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+:root {
+    --main-color: rgb(37, 179, 37);
+  }
+
 body {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
     overflow-x: hidden;
 }
 
@@ -21,6 +26,11 @@ img {
     width: 100%;
 }
 
+i {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -31,12 +41,19 @@ a {
 }
 
 span {
-    color: rgb(37, 179, 37);
+    color: var(--main-color);
 }
+
+footer {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* <HOME> */
 
 /* Navbar */
 #header-main {
-    border-bottom: 1px solid rgb(37, 179, 37);
+    border-bottom: 1px solid var(--main-color);
 }
 
 .navbar li{
@@ -45,11 +62,11 @@ span {
 }
 
 .navbar li a {
-color: rgb(37, 179, 37);
+color: var(--main-color);
 }
 
 .navbar li a.current, .navbar li a:hover {
-    border-bottom: 3px solid rgb(37, 179, 37);
+    border-bottom: 3px solid var(--main-color);
 }
 
 /* showcase */
@@ -65,9 +82,76 @@ color: rgb(37, 179, 37);
     background-color: #333;
     color: #fff;
     opacity: 0.9;
+    padding-top: 10px;
 }
 
 #showcase .container .row {
     height: 780px;
 }
 
+/* Core features 1 */
+#features .container .row div p{
+    margin: 0 0 30px 0;
+}
+
+#features .show-on-small {
+    display: none;
+}
+
+/* Core features 2 */
+#features2 {
+    background: url(../img/info-bg.jpg) no-repeat center center/cover;
+}
+
+#features2 .fa-check {
+    font-size: 1.5rem;
+    padding-right: 5px;
+}
+
+#features2 h1 {
+    color: rgb(214, 207, 207);
+}
+
+#features2 ul li {
+    line-height: 3;
+    color: #fff;
+}
+
+/* Contact */
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0px;
+}
+
+#contact input {
+    padding: 7px;
+}
+
+#contact button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+}
+
+@media (max-width: 770px) {
+    #header-main .navbar li {
+        padding-right: 10px;
+    }
+
+    #features .show-on-small {
+        display: inline-block;
+        padding-bottom: 30px;
+    }
+
+    #features .hide-on-small {
+        display: none;
+    }
+
+    #contact {
+        display: none;
+    }
+}
+
+/* </HOME> */
