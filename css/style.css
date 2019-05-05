@@ -201,6 +201,11 @@ color: var(--main-color);
         display: none;
     }
 
+    /* About us */
+    #about-us div h1 {
+        padding-bottom: 10px;
+    }
+
     /* Services */
     #services {
         margin: 20px 0 0 0;
